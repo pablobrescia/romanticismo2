@@ -1,0 +1,77 @@
+/*******************************************************************************/
+/*  Web del Romanticismo                                                       */
+/*  Hoja de estilo para autores                                                */
+/*  Autor: Pablo Brescia Rueda                                                 */
+/*  Versión: 1.0                                                               */
+/*  21 de octubre de 2022                                                      */
+/*******************************************************************************/
+
+/*  ESTILO GENERAL                                                             */
+@font-face {
+    src: url('../fonts/ChopinScript.ttf');
+    font-family: titulos;
+}
+
+@font-face {
+    src: url('../fonts/Poppins-Regular.ttf');
+    font-family: textos;
+}
+
+* {box-sizing: border-box;} /* En width debe contar desde el borde hacia adentro*/
+body{ margin:0;padding: 0; /* Para quitar la línea de color lightblue por defecto*/
+font-family: textos;
+text-indent: 4em;
+text-align:justify;
+/* padding: 1%; No se necesita un padding con un layout single column */
+background-color: lightblue;
+}
+
+#wrapper {
+background-color: white;
+width: 80%;
+margin:0 auto;
+padding: 2%;
+padding-bottom: 2% 2% 10% 2%;
+
+}
+
+h1,h2,h3 {
+font-family: titulos;
+border-bottom: 2px solid orangered;
+width: 75%; 
+text-align: center;
+margin: auto;
+margin-bottom: 50px;
+padding-bottom: 8px;
+}
+
+#Espronceda {
+width:20%;
+float:right;    /* Para que la imagen tenga el texto alrededor */
+margin-left: 2%;
+}
+
+#limpiar {clear:both;} /* Para desactivar el float left/right */
+
+a {text-decoration: none;
+    color:red;
+
+}
+/* PSDEUDOCLASES*/
+/* Cuando ponemos el ratón por encima la línea cambia de color*/
+
+a:hover {color:darkgoldenrod}
+
+/********* MEDIA QUERIES ********/
+
+/*** PARA TABLET ***/
+@media only screen and (width<=850px){
+#Espronceda {width: 40%;}
+}
+
+/*** PARA MOVIL ***/
+@media only screen and (width<=500px){
+#Espronceda {width: 100%;}
+#wrapper {width:100%;}
+}
+
